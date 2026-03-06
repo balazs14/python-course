@@ -16,25 +16,15 @@
     \tableofcontents
 \end{frame}
 
-\section{Introduction}
-\begin{frame}{Introduction}
-\begin{itemize}
-    \item Welcome to the Python Crash Course
-    \item Focus on statistical analysis with real data
-    \item Learn Python basics through practical examples
-    \item Cover pandas, matplotlib, and statsmodels
-    \item Work with panel data and regression analysis
-\end{itemize}    
-\end{frame}
-
 \section{Downloads}
 \begin{frame}{Downloads}
+Optionals are not necessary but really nice to have.
 \begin{itemize}
-    \item Download Python 3.x from \url{https://www.python.org/downloads/}. Click "put on path."
-    \item Download Visual Studio Code from \url{https://code.visualstudio.com/download}
-    \item Download Git from \url{https://git-scm.com/downloads}. Make sure to click "Git Bash" option
-    \item Create a GitHub account at \url{https://github.com}.
-    \item For Latex
+    \item Download Python 3.x from \url{https://www.python.org/downloads/}. Click "Add Python to PATH."
+    \item Optional:ownload Visual Studio Code from \url{https://code.visualstudio.com/download}
+    \item Optional: Download Git from \url{https://git-scm.com/downloads}. Make sure to click "Git Bash" option
+    \item Optional:Create a GitHub account at \url{https://github.com}.
+    \item Optional: For Latex
     \begin{itemize}
         \item Download MikTex from \url{https://miktex.org/download}
         \item Download Strawberry perl from \url{https://strawberryperl.com/}
@@ -45,16 +35,34 @@
 \section{Setup}
 \begin{frame}{Setup}
 \begin{itemize}
-    \item Open Visual Studio Code and Git clone the project from 
-          \url{https://github.com/balazs14/python-course.git}.
-    \item New terminal, initialize venv as per README
-    \item Click python\_intro\_stats\_notebook.ipynb
-    \item Install suggested extensions 
-    \item Install Latex Workshop for latex.
+    \item Expand the provided PythonCourse.zip file to a location of your choice.
+    \item Cmd prompt at the PythonCourse folder (right click on folder, select "Open with cmd"). For macOS, open terminal and \texttt{cd} to the PythonCourse folder.
+    \item type: "\texttt{python --version <Enter>}" (or try \texttt{python3 --version <Enter>} on macOS), you should see the Python version you installed. If you don't, ask AI until you do (reinstall python for example).
+    \item type: "\texttt{python setup\_env.py <Enter>}"
+    \item At the end of the script, it says "Next steps: Activate the environment" and tells you what to type. Type that.
+    \item type: "\texttt{jupyter notebook <Enter>}". This should open a browser window with the Jupyter interface. This is the basic setup, we can work from here, but I am showing you a better way too. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Better Way}
+\begin{itemize}
+    \item Open VSCode
+    \item Open folder: \textbf{File $\rightarrow$ Open Folder...} and select the unzipped PythonCourse folder.
+    \item On the left side you find the file explorer.  Click \texttt{python\_intro\_stats\_notebook.ipynb}
+    \item If VS Code asks to install recommended extensions, click \textbf{Yes}.
+    \item If VS Code asks what kernel to use, click the one called "venv".
 \end{itemize}
 \end{frame}
 
 \section{Sample Analysis}
+
+\begin{frame}{Work in Notebooks}
+\begin{itemize}
+    \item \texttt{python\_intro\_stats\_notebook.ipynb}
+    \item \texttt{numpy\_pandas\_quided\_tour\_finance.ipynb}
+\end{itemize}
+\end{frame}
+
 \begin{frame}{Sample Analysis Results}
 \begin{figure}[h]
     \centering

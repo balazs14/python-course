@@ -1,0 +1,160 @@
+{
+	// NP5Course workspace profile: project-local settings only.
+	// Keep user settings in other projects unchanged.
+
+	// ---- Core: workbench, editor, UI ----
+	"workbench.colorTheme": "Visual Studio Light",
+	"workbench.preferredDarkColorTheme": "Default Light+",
+	"workbench.editor.enablePreview": false,
+	"workbench.editorAssociations": {
+		"*.copilotmd": "vscode.markdown.preview.editor",
+		"*.pdf": "latex-workshop-pdf-hook"
+	},
+	"workbench.colorCustomizations": {
+		"panel.border": "#d2d2d2",
+		"editorGroup.border": "#b8b8b8",
+		"sideBar.border": "#000000",
+		"activityBar.border": "#b8b8b8",
+		"activityBar.activeBorder": "#00000000",
+		"activityBar.activeFocusBorder": "#4FC3F7",
+		"titleBar.border": "#b8b8b8",
+		"focusBorder": "#005fcc",
+		"contrastActiveBorder": "#005fcc",
+		"contrastBorder": "#00000000",
+		"window.activeBorder": "#000000",
+		"window.inactiveBorder": "#7a7a7a",
+		"editorCursor.foreground": "#000000",
+		"editorCursor.background": "#ffffff",
+		"editor.lineHighlightBackground": "#cfcfcf",
+		"editor.lineHighlightBorder": "#6f6f6f",
+		"list.focusBackground": "#8f8f8f55",
+		"list.focusForeground": "#ffffff",
+		"list.focusOutline": "#000000",
+		"list.activeSelectionBackground": "#00000000",
+		"list.activeSelectionForeground": "#000000",
+		"list.inactiveSelectionBackground": "#00000000",
+		"list.inactiveSelectionForeground": "#000000",
+		"panelTitle.activeBorder": "#00000000",
+		"panelTitle.activeForeground": "#000000",
+		"panelTitle.inactiveForeground": "#9a9a9a",
+		"sideBarTitle.foreground": "#000000",
+		"chat.requestInputBackground": "#e0e0e0",
+		"chat.requestInputBorder": "#000000",
+		"chat.requestInputForeground": "#000000",
+		"terminalCursor.foreground": "#000000",
+		"terminalCursor.background": "#ffffff"
+	},
+	"window.autoDetectColorScheme": true,
+	"editor.accessibilitySupport": "off",
+	"editor.cursorStyle": "block",
+	"editor.cursorBlinking": "solid",
+	"editor.cursorWidth": 4,
+	"editor.renderLineHighlight": "all",
+	"editor.renderLineHighlightOnlyWhenFocus": true,
+	"editor.smoothCaretAnimation": "off",
+	"editor.formatOnSave": true,
+	"editor.minimap.enabled": false,
+	"editor.inlineSuggest.enabled": true,
+	"editor.inlineSuggest.showToolbar": "always",
+	"editor.inlineSuggest.edits.showCollapsed": true,
+	"editor.quickSuggestions": {
+		"other": "off",
+		"comments": "off",
+		"strings": "off"
+	},
+	"editor.suggestOnTriggerCharacters": false,
+	"editor.parameterHints.enabled": false,
+	"editor.acceptSuggestionOnEnter": "on",
+	"editor.suggest.showWords": true,
+	"editor.find.seedSearchStringFromSelection": "never",
+	"search.seedWithNearestWord": false,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"diffEditor.renderSideBySide": true,
+	"diffEditor.codeLens": true,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"workbench.tree.indent": 20,
+	"debug.breakpointsView.presentation": "tree",
+	"chat.viewSessions.orientation": "stacked",
+	"files.autoSave": "afterDelay",
+	"search.useIgnoreFiles": false,
+	"search.useGlobalIgnoreFiles": false,
+	"search.useParentIgnoreFiles": false,
+	"search.exclude": {
+		"**/venv/**": true
+	},
+	"http.systemCertificatesNode": true,
+	"notebook.cellFocusIndicator": "border",
+	"notebook.compactView": false,
+	"notebook.consolidatedRunButton": true,
+	"notebook.globalToolbar": false,
+	"notebook.stickyScroll.enabled": true,
+	"notebook.output.textLineLimit": 2000,
+
+	// ---- Git ----
+	"git.openRepositoryInParentFolders": "always",
+	"git.ignoreLegacyWarning": true,
+	"git.autofetch": true,
+	"git.confirmSync": false,
+	"git.enableSmartCommit": true,
+
+	// ---- Security & environment ----
+	"security.workspace.trust.untrustedFiles": "open",
+
+	// ---- Terminal ----
+	"terminal.integrated.suggest.suggestOnTriggerCharacters": false,
+	"terminal.integrated.cursorStyle": "line",
+	"terminal.integrated.cursorStyleInactive": "none",
+	"terminal.integrated.cursorWidth": 8,
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.macOptionIsMeta": true,
+	"terminal.integrated.enableMultiLinePasteWarning": "never",
+	"terminal.integrated.tabs.enabled": false,
+
+	// ---- Python ----
+	"python.createEnvironment.trigger": "off",
+	"python.defaultInterpreterPath": "${workspaceFolder}/venv",
+	"python.testing.pytestArgs": [
+		"."
+	],
+
+	// ---- Jupyter ----
+	"[jupyter-notebook]": {
+		"editor.inlineSuggest.enabled": false,
+		"editor.quickSuggestions": {
+			"other": "off",
+			"comments": "off",
+			"strings": "off"
+		},
+		"editor.suggestOnTriggerCharacters": false,
+		"editor.parameterHints.enabled": false
+	},
+	"jupyter.completionTriggerCharacters": {},
+	"jupyter.themeMatplotlibPlots": true,
+	"jupyter.askForKernelRestart": false,
+
+	// ---- Jupytext Sync ----
+	// Use the interpreter selected by the Python extension to stay cross-platform.
+
+	// ---- LaTeX Workshop ----
+	"latex-workshop.latex.outDir": "build",
+	"[latex]": {
+		"editor.defaultFormatter": "James-Yu.latex-workshop"
+	},
+
+	// ---- GitHub Copilot mostly silent ----
+	"github.copilot.enable": {
+		"*": false,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false,
+		"latex": true
+	},
+	"github.copilot.nextEditSuggestions.enabled": true,
+
+	// ---- Emacs ----
+	"emacs.useMetaPrefix": true,
+
+	// ---- Red Hat ----
+	"redhat.telemetry.enabled": false
+}

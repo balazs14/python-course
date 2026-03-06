@@ -1,0 +1,299 @@
+// Optional NP5Course keybindings template.
+// VS Code does not support workspace-scoped keybindings enforcement.
+// If desired, copy these entries to User keybindings for matching behavior.
+[
+  {
+    "key": "ctrl+v",
+    "command": "cursorPageDown",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+v",
+    "command": "cursorPageUp",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+space",
+    "command": "editor.action.inlineSuggest.trigger",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+c",
+    "command": "editor.action.clipboardCopyAction",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+v",
+    "command": "editor.action.clipboardPasteAction",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+x",
+    "command": "editor.action.clipboardCutAction",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+z",
+    "command": "undo",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+shift+z",
+    "command": "redo",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+up",
+    "command": "cursorMove",
+    "when": "editorTextFocus",
+    "args": {
+      "to": "up",
+      "by": "line",
+      "value": 5
+    }
+  },
+  {
+    "key": "ctrl+down",
+    "command": "cursorMove",
+    "when": "editorTextFocus",
+    "args": {
+      "to": "down",
+      "by": "line",
+      "value": 5
+    }
+  },
+  {
+    "key": "ctrl+left",
+    "command": "cursorTop",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+right",
+    "command": "cursorBottom",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "backspace",
+    "command": "deleteLeft",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "interactive.input.focus"
+  },
+  {
+    "key": "ctrl+shift+o",
+    "command": "workbench.action.focusPreviousGroup"
+  },
+  {
+    "key": "ctrl+cmd+f",
+    "command": "-workbench.action.toggleFullScreen",
+    "when": "!isIOS"
+  },
+  {
+    "key": "shift+cmd+m",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "panelAlignment == 'center' || panelPosition != 'bottom' && panelPosition != 'top'"
+  },
+  {
+    "key": "shift+c",
+    "command": "notebook.cell.expandCellInput",
+    "when": "notebookCellInputIsCollapsed && notebookCellListFocused"
+  },
+  {
+    "key": "cmd+k cmd+c",
+    "command": "-notebook.cell.expandCellInput",
+    "when": "notebookCellInputIsCollapsed && notebookCellListFocused"
+  },
+  {
+    "key": "shift+c",
+    "command": "notebook.cell.collapseCellInput",
+    "when": "notebookCellListFocused && !inputFocus && !notebookCellInputIsCollapsed"
+  },
+  {
+    "key": "shift+o",
+    "command": "notebook.cell.expandCellOutput",
+    "when": "notebookCellOutputIsCollapsed && notebookCellListFocused && !inputFocus"
+  },
+  {
+    "key": "shift+o",
+    "command": "notebook.cell.collapseCellOutput",
+    "when": "!notebookCellOutputIsCollapsed && notebookCellListFocused && !inputFocus"
+  },
+  {
+    "key": "shift+tab",
+    "command": "editor.action.inlineSuggest.acceptNextWord",
+    "when": "inlineSuggestionVisible && editorTextFocus"
+  },
+  {
+    "key": "alt+f",
+    "command": "cursorWordRight",
+    "when": "textInputFocus && !terminalFocus && !inlineSuggestionVisible && !inSnippetMode"
+  },
+  {
+    "key": "alt+b",
+    "command": "cursorWordLeft",
+    "when": "textInputFocus && !terminalFocus && !inlineSuggestionVisible && !inSnippetMode"
+  },
+  {
+    "key": "cmd+j",
+    "command": "-workbench.action.togglePanel"
+  },
+  {
+    "key": "cmd+j",
+    "command": "-editor.action.joinLines",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+j",
+    "command": "workbench.action.focusNextPart",
+    "when": "!inQuickOpen"
+  },
+  {
+    "key": "cmd+shift+j",
+    "command": "workbench.action.toggleZenMode",
+    "when": "!isAuxiliaryWindowFocusedContext"
+  },
+  {
+    "key": "f6",
+    "command": "-workbench.action.focusNextPart"
+  },
+  {
+    "key": "enter",
+    "command": "list.select",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-renameFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+cmd+j",
+    "command": "workbench.action.nextPanelView"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+o",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+x ctrl+o",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+x o",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+x o",
+    "command": "-workbench.action.focusNextGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+x ctrl+o",
+    "command": "-workbench.action.focusNextGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+x ctrl+shift-o",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+x 2",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+x 3",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+x 2",
+    "command": "workbench.action.splitEditorDown",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+x 3",
+    "command": "workbench.action.splitEditorRight",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+x 0",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+x 0",
+    "command": "workbench.action.closeEditorsInGroup",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+x b",
+    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditor",
+    "when": "(editorFocus || activeEditor == 'latex-workshop-pdf-hook') && !inQuickOpen"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditor",
+    "when": "(editorFocus || activeEditor == 'latex-workshop-pdf-hook') && !inQuickOpen"
+  },
+  {
+    "key": "ctrl+x ctrl+f",
+    "command": "workbench.action.quickOpen",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+x k",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "editorIsOpen && !terminalFocus"
+  },
+  {
+    "key": "ctrl+x k",
+    "command": "-workbench.action.closeWindow",
+    "when": "activeEditor == 'latex-workshop-pdf-hook'"
+  },
+  {
+    "key": "ctrl+x k",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "activeEditor == 'latex-workshop-pdf-hook'"
+  },
+  {
+    "key": "cmd+k cmd+z",
+    "command": "workbench.action.toggleZenMode",
+    "when": "!isAuxiliaryWindowFocusedContext"
+  },
+  {
+    "key": "cmd+shift+j",
+    "command": "-workbench.action.focusPreviousPart",
+    "when": "!inQuickOpen"
+  },
+  {
+    "key": "cmd+k z",
+    "command": "-workbench.action.toggleZenMode",
+    "when": "!isAuxiliaryWindowFocusedContext"
+  },
+  {
+    "key": "ctrl+c ctrl+c",
+    "command": "jupyter.interruptkernel",
+    "when": "notebookEditorFocused || interactiveWindowFocused || interactiveInputFocus"
+  },
+  {
+    "key": "shift+cmd+\\",
+    "command": "workbench.action.showCommands"
+  }
+]

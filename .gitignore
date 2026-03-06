@@ -2,6 +2,7 @@ __pycache__
 .venv
 .code
 datasets
+venv
 *.aux
 *.fls
 *.fdb_latexmk
@@ -26,5 +27,5 @@ datasets
 .DS_Store
 Thumbs.db
 #maybe the rest can be source controlled after all
-*.pdf
-*.png
+#*.pdf
+#*.png

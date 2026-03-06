@@ -3,7 +3,6 @@ from pprint import pprint
 import pandas as pd
 import numpy as np
 
-from tardis_client import TardisClient, Channel
 from tardis_dev import datasets
 
 
