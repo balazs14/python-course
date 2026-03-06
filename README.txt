@@ -9,26 +9,26 @@ Follow the steps below to create and activate the environment, then install the 
 
 macOS / Linux::
 
-    python3 -m venv .venv
+    python3 -m venv venv
 
 Windows (PowerShell)::
 
-    python -m venv .venv
+    python -m venv venv
 
 2. Activate the virtual environment
 -----------------------------------
 
 macOS / Linux::
 
-    source .venv/bin/activate
+    source venv/bin/activate
 
 Windows (PowerShell)::
 
-    .\.venv\Scripts\Activate.ps1
+    .\venv\Scripts\Activate.ps1
 
 Windows (cmd.exe)::
 
-    .\.venv\Scripts\activate.bat
+    .\venv\Scripts\activate.bat
 
 3. Install required dependencies
 --------------------------------
@@ -49,8 +49,8 @@ When done::
 
 macOS / Linux::
 
-    source .venv/bin/activate
+    source venv/bin/activate
 
 Windows (PowerShell)::
 
-    .\.venv\Scripts\Activate.ps1
+    .\venv\Scripts\Activate.ps1
