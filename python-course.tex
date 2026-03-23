@@ -18,7 +18,7 @@
 
 \section{Downloads}
 \begin{frame}{Downloads}
-Optionals are not necessary but really nice to have.
+Optionals are not necessary but really nice to have, I will talk a lot about those.
 \begin{itemize}
     \item Download Python 3.x from \url{https://www.python.org/downloads/}. Click "Add Python to PATH."
     \item Optional:ownload Visual Studio Code from \url{https://code.visualstudio.com/download}
@@ -50,7 +50,8 @@ Optionals are not necessary but really nice to have.
     \item Open folder: \textbf{File $\rightarrow$ Open Folder...} and select the unzipped PythonCourse folder.
     \item On the left side you find the file explorer.  Click \texttt{python\_intro\_stats\_notebook.ipynb}
     \item If VS Code asks to install recommended extensions, click \textbf{Yes}.
-    \item If VS Code asks what kernel to use, click the one called "venv".
+    \item If VS Code asks what kernel to use, always choose "python virtual environment" and click the one called "venv".
+    \item If VS Code complains about "could not find python interpreter for jupytext", just click away the popup.
 \end{itemize}
 \end{frame}
 
@@ -59,7 +60,7 @@ Optionals are not necessary but really nice to have.
 \begin{frame}{Work in Notebooks}
 \begin{itemize}
     \item \texttt{python\_intro\_stats\_notebook.ipynb}
-    \item \texttt{numpy\_pandas\_quided\_tour\_finance.ipynb}
+    \item \texttt{numpy\_pandas\_guided\_tour\_finance.ipynb}
 \end{itemize}
 \end{frame}
 
@@ -71,6 +72,37 @@ Optionals are not necessary but really nice to have.
     \label{fig:sample_analysis}
 \end{figure}
 As we can see in Figure \ref{fig:sample_analysis}, our publication deserves a lot of citations.
+\end{frame}
+
+\section{GitHub Collaboration}
+
+\begin{frame}{Collaborating on LaTeX via GitHub}
+\begin{itemize}
+    \item \textbf{Initialize repository}: Create a repo on GitHub, clone it locally
+    \item \textbf{Create a branch} for your feature: \texttt{git checkout -b feature-name}
+    \item \textbf{Edit your .tex file(s)} and commit regularly:
+    \begin{itemize}
+        \item \texttt{git add <file>}
+        \item \texttt{git commit -m "Clear message about changes"}
+        \item \texttt{git push origin feature-name}
+    \end{itemize}
+    \item \textbf{Open a Pull Request (PR)} on GitHub for review
+    \item \textbf{Resolve conflicts} if others edited the same lines
+    \item \textbf{Merge} after approval
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Tips for LaTeX Collaboration}
+\begin{itemize}
+    \item \textbf{One sentence per line} in your .tex files—makes diffs clearer and conflicts easier to resolve
+    \item \textbf{Commit frequently}—small, logical changes are easier to review and merge
+    \item \textbf{.gitignore}—exclude build artifacts:
+    \begin{itemize}
+        \item \texttt{*.aux}, \texttt{*.log}, \texttt{*.pdf}, \texttt{*.fdb\_latexmk}, \texttt{*.fls}, \texttt{*.nav}, \texttt{*.snm}, \texttt{*.toc}
+    \end{itemize}
+    \item \textbf{Communicate}—discuss large structural changes in issues before editing
+    \item \textbf{Use descriptive branch names}: \texttt{fix-typos}, \texttt{add-appendix}, \texttt{reformat-intro}
+\end{itemize}
 \end{frame}
 
 \begin{frame}
